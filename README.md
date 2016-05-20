@@ -74,6 +74,16 @@ The first example will generate a response with the following `Content-Range` he
 
 The `*` will be replaced with the total number of items provided in the `length` variable.
 
+##### Codes
+
+| Code | Reason |
+| --- | --- |
+| 200 | `Range` header is not provided. |
+| 206 | `Range` header is valid. |
+| 412 | `Range` is malformed. |
+| 416 | `Range` is invalid. |
+| 500 | Bad middleware configuration. |
+
 ## Running tests
 
 ```sh
